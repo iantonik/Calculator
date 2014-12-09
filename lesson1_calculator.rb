@@ -1,7 +1,7 @@
 #Lesson 1 Assignment: Calculator
 
 puts 'Provide the first number.'
-num1 = gets.chomp.to_i
+num1 = gets.chomp.to_f
 
 while true
 
@@ -11,7 +11,7 @@ while true
 
   if ['+', '*', '-', '/'].include? response
     puts 'Provide the next number'
-    num = gets.chomp.to_i
+    num = gets.chomp.to_f
     case response
       when '+'
         num1 += num
